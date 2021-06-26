@@ -6,6 +6,7 @@ module.exports = {
     description: 'Full Stack Developer specializing in Javascript, Node.js, Express, MongoDB, and React/Redux.'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-breakpoints',
       options: {

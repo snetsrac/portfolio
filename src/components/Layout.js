@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 
 import { Topbar, Sidebar } from '.';
@@ -6,9 +8,24 @@ import content from '../content/content.yaml';
 
 const Layout = ({ children }) => {
   const breakpoints = useBreakpoint();
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          description
+          title
+        }
+      }
+    }
+  `);
 
   return (
     <>
+      <Helmet>
+        <html lang="en"></html>
+        <meta name="description" content={data.site.siteMetadata.description} />
+        <title>{data.site.siteMetadata.title}</title>
+      </Helmet>
       {breakpoints.lg ? <Sidebar /> : <Topbar />}
       <main className={breakpoints.lg ? 'ml-64' : 'mt-16'}>
         {children}
