@@ -61,19 +61,21 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="-mt-16 pt-16 lg:mt-0 lg:pt-0">
-      <div className="mx-auto max-w-screen-xl py-12 px-8">
-        <h2 className="mb-12 text-3xl font-extrabold">Contact Me</h2>
-        <form id="contactForm" onSubmit={onFormSubmit}>
-          <fieldset disabled={status === 'unsubmitted' ? false : 'disabled'}>
-            <input className="mb-8 border-b border-gray-300 p-2 w-full" type="text" name="from_name" placeholder="Name" required value={name} onChange={(e) => setName(e.target.value)} />
-            <input className="mb-8 border-b border-gray-300 p-2 w-full" type="email" name="from_email" placeholder="Email" required value={email} onChange={(e) => setEmail(e.target.value)} />
-            <input className="mb-8 border-b border-gray-300 p-2 w-full" type="text" name="subject" placeholder="Subject" required value={subject} onChange={(e) => setSubject(e.target.value)} />
-            <textarea className="mb-8 border-b border-gray-300 p-2 w-full min-h-16" name="message" placeholder="Message" required value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-            <button className="rounded-full py-3 px-6 bg-green-600 disabled:opacity-50 disabled:cursor-not-allowed text-white" type="submit">Send Message</button>
-            {renderFormStatus()}
-          </fieldset>
-        </form>
+    <section id="contact" className="-mt-16 pt-16 lg:mt-0 lg:pt-0" data-scroll-section>
+      <div className="bg-gray-100">
+        <div className="mx-auto max-w-screen-xl py-12 px-8">
+          <h2 className="mb-12 text-3xl font-extrabold">Contact Me</h2>
+          <form id="contactForm" onSubmit={onFormSubmit}>
+            <fieldset disabled={status === 'unsubmitted' ? false : 'disabled'}>
+              <input className="mb-8 border-b border-gray-300 p-2 w-full" type="text" name="from_name" placeholder="Name" required value={name} onChange={(e) => setName(e.target.value)} />
+              <input className="mb-8 border-b border-gray-300 p-2 w-full" type="email" name="from_email" placeholder="Email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input className="mb-8 border-b border-gray-300 p-2 w-full" type="text" name="subject" placeholder="Subject" required value={subject} onChange={(e) => setSubject(e.target.value)} />
+              <textarea className="mb-8 border-b border-gray-300 p-2 w-full min-h-16" name="message" placeholder="Message" required value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+              <button className="rounded-full py-3 px-6 bg-green-600 disabled:opacity-50 disabled:cursor-not-allowed text-white" type="submit">Send Message</button>
+              {renderFormStatus()}
+            </fieldset>
+          </form>
+        </div>
       </div>
     </section>
   );

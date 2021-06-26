@@ -8,7 +8,7 @@ const About = () => {
   const breakpoints = useBreakpoint();
 
   return (
-    <section id="about" className="-mt-16 pt-16 lg:mt-0 lg:pt-0">
+    <section id="about" className="-mt-16 pt-16 lg:mt-0 lg:pt-0" data-scroll-section>
       <div className="mx-auto max-w-screen-xl py-12 px-8">
         <h2 className="mb-12 text-3xl font-extrabold">About Me</h2>
         <div className="mb-12 flex justify-center">
