@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import content from '../content';
+import background from '../public/background.jpg';
 
 const Home = () => {
   const splitName = [
@@ -18,10 +19,11 @@ const Home = () => {
       <div className='relative grid h-1/2-screen lg:h-screen'>
         <Image
           className='col-start-1 row-start-1 brightness-30 filter'
-          src='/rich-martello-Y9fSIO8RyTU-unsplash.jpg'
+          src={background}
           alt='green pine trees near lake and snow covered mountain during daytime photo - Free Image on Unsplash'
           layout='fill'
           objectFit='cover'
+          placeholder='blur'
           priority
         />
         <div className='z-10 col-start-1 row-start-1 flex flex-col justify-center text-center text-white'>
