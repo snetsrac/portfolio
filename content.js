@@ -24,19 +24,19 @@ export default {
     java: {
       title: 'Java',
       description:
-        'Java is an object-oriented, statically typed, interpreted language used in many different contexts.',
+        'Java is an object-oriented, statically typed, platform-independent language used in many different contexts.',
       imageUrl: '/skills/java.png',
     },
     spring: {
       title: 'Spring (Boot)',
       description:
-        'The Spring Framework is an open source modular application framework commonly used in web applications.',
+        'The Spring Framework is an open source modular application framework commonly used in Java web applications.',
       imageUrl: '/skills/spring.png',
     },
     sql: {
       title: 'SQL Databases',
       description:
-        'Relational database management systems such as PostgreSQL and MySQL are the go-to for managing data.',
+        'Relational database management systems such as PostgreSQL and MySQL are the standard for managing data.',
       imageUrl: '/skills/postgresql.png',
     },
     javascript: {
