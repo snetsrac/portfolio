@@ -60,18 +60,18 @@ const Sidebar = () => {
         About Me
       </a>
       <a
-        href='#skills'
-        className='p-4 text-lg transition-colors hover:bg-zinc-700 hover:text-white'
-        id='skillsNav'
-      >
-        Skills
-      </a>
-      <a
         href='#projects'
         className='p-4 text-lg transition-colors hover:bg-zinc-700 hover:text-white'
         id='projectsNav'
       >
         Projects
+      </a>
+      <a
+        href='#skills'
+        className='p-4 text-lg transition-colors hover:bg-zinc-700 hover:text-white'
+        id='skillsNav'
+      >
+        Skills
       </a>
       <a
         href='#contact'

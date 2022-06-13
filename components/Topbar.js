@@ -44,16 +44,16 @@ const Topbar = () => {
             About Me
           </a>
           <a
-            href='#skills'
-            className='p-4 text-zinc-300 hover:bg-zinc-700 hover:text-zinc-50'
-          >
-            Skills
-          </a>
-          <a
             href='#projects'
             className='p-4 text-zinc-300 hover:bg-zinc-700 hover:text-zinc-50'
           >
             Projects
+          </a>
+          <a
+            href='#skills'
+            className='p-4 text-zinc-300 hover:bg-zinc-700 hover:text-zinc-50'
+          >
+            Skills
           </a>
           <a
             href='#contact'
