@@ -9,13 +9,14 @@ module.exports = {
       sans: ['Open Sans', 'sans-serif'],
       narrow: ['PT Sans Narrow', 'Open Sans', 'sans-serif'],
     },
-    minHeight: {
-      16: '4rem',
-    },
     extend: {
       brightness: {
         15: '.15',
         30: '.3',
+      },
+      minHeight: {
+        16: '4rem',
+        48: '12rem',
       },
       spacing: {
         112: '28rem',

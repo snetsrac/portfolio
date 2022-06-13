@@ -1,14 +1,14 @@
-import React from 'react';
+import { useState } from 'react';
 
 import ProjectDetail from './ProjectDetail';
 import content from '../content';
+import ProjectModal from './ProjectModal';
+
+const projects = Object.entries(content.projects);
 
 const Projects = () => {
-  const renderProjects = () => {
-    return Object.entries(content.projects).map(([key, value]) => {
-      return <ProjectDetail key={key} project={value} />;
-    });
-  };
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   return (
     <section
@@ -20,10 +20,25 @@ const Projects = () => {
         <div className='mx-auto max-w-screen-xl py-12 px-8'>
           <h2 className='mb-12 text-3xl font-extrabold'>Projects</h2>
           <div className='grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3'>
-            {renderProjects()}
+            {projects.map(([key, value]) => (
+              <button
+                key={key}
+                onClick={() => {
+                  setSelectedProject(value);
+                  setIsOpen(true);
+                }}
+              >
+                <ProjectDetail project={value} />
+              </button>
+            ))}
           </div>
         </div>
       </div>
+      <ProjectModal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        project={selectedProject}
+      />
     </section>
   );
 };

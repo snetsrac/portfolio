@@ -7,7 +7,7 @@ function classNames(...classes) {
 
 const ProjectDetail = ({ project }) => {
   return (
-    <a className='group relative text-center' href={project.url}>
+    <div className='group relative text-center'>
       <div
         className={classNames(
           project.backgroundColor,
@@ -29,7 +29,7 @@ const ProjectDetail = ({ project }) => {
         <p className='text-zinc-100'>{project.title}</p>
         <p className='text-green-600'>More Info</p>
       </div>
-    </a>
+    </div>
   );
 };
 

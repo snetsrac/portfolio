@@ -1,5 +1,7 @@
 import React from 'react';
 
+import content from '../content';
+
 const CallToAction = () => {
   return (
     <aside className='bg-zinc-800' data-scroll-section>
@@ -8,10 +10,7 @@ const CallToAction = () => {
           <h2 className='mb-4 text-4xl font-bold text-zinc-100'>
             {"Let's work together!"}
           </h2>
-          <p className='text-sm text-zinc-400'>
-            I am available for full-time work and freelance projects. Hire me
-            and get your project done.
-          </p>
+          <p className='text-sm text-zinc-400'>{content.callToAction}</p>
         </div>
         <a
           href='#contact'

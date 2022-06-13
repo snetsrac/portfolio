@@ -67,7 +67,7 @@ const Topbar = () => {
   };
 
   return (
-    <nav className='fixed top-0 left-0 z-50 w-full lg:hidden'>
+    <nav className='fixed top-0 left-0 z-40 w-full lg:hidden'>
       <div className='h-16 bg-zinc-900'>
         <button
           className='float-right m-3 w-20 rounded bg-zinc-700 p-2 text-zinc-300'

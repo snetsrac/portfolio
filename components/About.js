@@ -23,9 +23,9 @@ const About = () => {
           </div>
         </div>
         <p className='mb-4 text-lg text-green-600'>Who am I?</p>
-        <h3 className='mb-6 text-2xl font-semibold'>
+        {/* <h3 className='mb-6 text-2xl font-semibold'>
           {`I'm ${content.name}, a ${content.title}`}
-        </h3>
+        </h3> */}
         <div className='mb-8'>{content.about}</div>
         <hr className='mb-8' />
         <div className='grid grid-cols-1 md:grid-cols-2'>
