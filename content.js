@@ -5,7 +5,7 @@ export default {
     'Full Stack Developer - Java | Spring | Typescript | React | Node.js',
   status: 'Available for Work',
   about:
-    'I am an environmental professional seeking to transition to a software developer role in the Denver/Boulder area. I have experience managing complex, multi-year projects. I enjoy making sense out of complicated technical problems and delivering quality solutions. I love to learn, and would be happy to get up to speed on any technologies or domain knowledge required for your project.',
+    'I am an environmental professional seeking to transition to a software developer role. I have experience managing complex, multi-year projects. I enjoy making sense out of complicated technical problems and delivering quality solutions. I love to learn, and would be happy to get up to speed on any technologies or domain knowledge required for your project.',
   email: {
     address: 'dev@chriscarstens.com',
     url: 'mailto:dev@chriscarstens.com',
@@ -19,7 +19,7 @@ export default {
     url: 'https://linkedin.com/in/snetsrac',
   },
   callToAction:
-    'I am currently seeking a full-time position in the Denver/Boulder area.',
+    'I am currently seeking a full-time position.',
   skills: {
     java: {
       title: 'Java',
