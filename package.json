@@ -11,22 +11,22 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.6.2",
-    "@headlessui/react": "^1.6.4",
-    "autoprefixer": "^10.4.7",
-    "next": "^12.1.6",
-    "postcss": "^8.4.14",
-    "prettier": "^2.6.2",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "sharp": "^0.30.6",
-    "tailwindcss": "^3.1.2"
+    "@emailjs/browser": "^3.7.0",
+    "@headlessui/react": "^1.7.3",
+    "autoprefixer": "^10.4.12",
+    "next": "^12.3.1",
+    "postcss": "^8.4.17",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.31.1",
+    "tailwindcss": "^3.1.8"
   },
   "devDependencies": {
-    "eslint": "^8.17.0",
-    "eslint-config-next": "^12.1.6",
+    "eslint": "^8.25.0",
+    "eslint-config-next": "^12.3.1",
     "eslint-config-prettier": "^8.5.0",
     "js-yaml": "^4.1.0",
-    "prettier-plugin-tailwindcss": "^0.1.11"
+    "prettier-plugin-tailwindcss": "^0.1.13"
   }
 }
