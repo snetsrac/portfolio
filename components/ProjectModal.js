@@ -59,7 +59,7 @@ export default function ProjectModal({ isOpen, setIsOpen, project }) {
                   </div>
                 </div>
                 <p className='mt-5 text-right text-sm italic text-gray-500 sm:mt-10'>
-                  Note: This project runs on a free Heroku dyno, and may take
+                  Note: This project runs on a Heroku Eco dyno, and may take
                   some time to respond initially.
                 </p>
                 <div className='mt-2 sm:flex sm:flex-row-reverse sm:gap-3'>
