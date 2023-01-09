@@ -53,7 +53,7 @@ const About = () => {
         </div>
         <a
           className='mb-4 block w-auto rounded-full bg-green-600 py-3 px-6 text-center text-white md:mb-0 md:inline-block md:text-left'
-          href='/ChrisCarstensResume2022.pdf'
+          href='/ChrisCarstensResume2023.pdf'
         >
           Download Resume
         </a>
